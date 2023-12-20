@@ -14,9 +14,9 @@ async function chat(input) {
 
   return response.choices[0].message.content;
 }
-
 const question = 'What is the capital of Italy';
 
+//no template question
 chat(question)
   .then((response) => console.log(response))
   .catch((error) => console.error(error));
@@ -26,6 +26,7 @@ const promptTemplate = (question) => `
   Question:${question}
 `;
 
+// template created for the question
 chat(promptTemplate(question))
   .then((response) => console.log(response))
   .catch((error) => console.error(error));
