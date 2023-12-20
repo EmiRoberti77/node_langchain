@@ -8,7 +8,10 @@ export class PrompTemplateClass extends Base {
     super(openAIApiKey);
 
     this.prompt = PromptTemplate.fromTemplate(
-      'what is a good name for a company that names {product}?'
+      `what is a good name for a company that names {product}?
+
+      format the response in bullets points with three names
+      `
     );
   }
 
@@ -21,6 +24,6 @@ export class PrompTemplateClass extends Base {
 
     const llm = new ChatOpenAI();
     const llmResponse = await llm.predict(formattedPrompt);
-    console.log('llm promptTemplate', llmResponse);
+    console.log('llm promptTemplate\r', llmResponse);
   }
 }
