@@ -17,7 +17,7 @@ const model = new ChatOpenAI({
 const tools = [new Calculator()];
 
 //init all the tools
-const executer = await await initializeAgentExecutorWithOptions(tools, model, {
+const executer = await initializeAgentExecutorWithOptions(tools, model, {
   agentType: 'chat-conversational-react-description',
   verbose: false,
 });
