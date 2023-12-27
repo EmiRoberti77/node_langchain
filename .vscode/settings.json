@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["langchain", "llms", "OPENAI", "Promp"]
+  "cSpell.words": [
+    "emded",
+    "emdedding",
+    "Faiss",
+    "langchain",
+    "llms",
+    "OPENAI",
+    "Promp"
+  ]
 }
